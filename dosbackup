@@ -1,0 +1,7 @@
+#!/bin/bash
+
+###Start Onedrive in background:
+startOneDrive
+
+compress7z ~/DOS
+mv ~/DOS.7z ~/OneDrive/

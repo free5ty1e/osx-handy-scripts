@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo dd bs=2m if=$1 of=/dev/$2
+
+

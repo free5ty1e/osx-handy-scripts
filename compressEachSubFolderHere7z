@@ -1,0 +1,9 @@
+#!/bin/bash
+
+##Can install p7zip with brew:
+### brew install p7zip
+
+#This is the "compress7z" command in case we want to inline it:
+#7z a -r -y -xr!.DS_Store -mx=9 "$1.7z" "$1"
+
+for D in *; do [ -d "${D}" ] && cd "${D}" && compressEachFolderHere7z && cd .. ; done

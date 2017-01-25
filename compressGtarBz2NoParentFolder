@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#tar -zcvf "$1.tar.gz" -C "$1" .
+gtar -cvf "$1.tar" -C "$1" .
+compressBz2 "$1.tar"

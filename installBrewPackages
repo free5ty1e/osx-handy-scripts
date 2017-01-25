@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#This assumes you already have Xcode installed, and are registered as an Apple developer,
+#..and have installed Xcode command line tools installed:
+# xcode click Xcode>Open Developer Tool>More Developer Tools
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor
+brew update
+brew install ant
+brew install maven
+brew install git
+brew install node
+brew install p7zip
+brew install android
+defaults write com.apple.finder AppleShowAllFiles TRUE
+

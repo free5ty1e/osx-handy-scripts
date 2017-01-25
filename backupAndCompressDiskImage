@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo dd bs=2m if=/dev/$1 of=$2
+compress7z $2

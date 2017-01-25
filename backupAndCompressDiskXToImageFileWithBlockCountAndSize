@@ -1,0 +1,10 @@
+#!/bin/bash
+#Usage to back up /dev/disk1 to ./backup.img with a block size of 512 bytes and 4091905 total blocks to backup:
+# (which is a total size of 512 * 4091905 = 2095055360 bytes)
+#   backupAndCompressDiskXToImageFileWithEstimatedTotalSize 1 ./backup.img 512 4091905 2095055360
+
+#if needed:
+#brew install pv
+
+sudo pv --size $5 /dev/disk$1 | dd bs=$3 count=$4 of=$2
+compress7z $2

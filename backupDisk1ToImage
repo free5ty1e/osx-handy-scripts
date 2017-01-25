@@ -1,0 +1,2 @@
+sudo dd bs=2m if=/dev/disk1 of=$1
+compress7z $1
