@@ -1,0 +1,7 @@
+#!/bin/bash
+
+###Start Onedrive in background:
+startOneDrive
+
+compress7z ~/Downloads/RaspberryPi/primeStationOne
+mv ~/Downloads/RaspberryPi/primeStationOne.7z ~/OneDrive/

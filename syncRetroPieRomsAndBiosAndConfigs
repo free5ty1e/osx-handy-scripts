@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rsync -avzh --progress --delete BIOS pi@$1:/home/pi/BIOS
+
+rsync -avzh --progress pi@$1:/opt/retropie/configs configs/opt/retropie/configs
+
+rsync -avzh --progress pi@$1:/opt/retropie/emulators/rpix86/*.sh configs/opt/retropie/emulators/rpix86
+
+rsync -avzh --progress configs/home/pi/.emulationstation/*.cfg pi@$1:/home/pi/.emulationstation
+
+rsync -avzh --progress --delete roms pi@$1:/home/pi/roms

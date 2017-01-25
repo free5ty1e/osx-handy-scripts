@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##Can install p7zip with brew:
+### brew install p7zip
+
+#7z a -r -y -mx=9 "$1.7z" "$1"
+7z a -r -y -xr!.DS_Store -mx=9 "$1.7z" "./$1/*"

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#/Applications/OneDrive.app/Contents/MacOS/OneDrive
+open -n /Applications/OneDrive.app
+

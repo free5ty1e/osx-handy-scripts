@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm ~/ONCa.old.db
+mv ~/ONCa.db ~/ONCa.old.db
+adb pull data/data/com.nike.onenikecommerceandroid/databases/ONCa.db ~/
+open -a sqlitebrowser ~/ONCa.db

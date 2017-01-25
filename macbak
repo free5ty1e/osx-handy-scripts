@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#cp -r -v ~/* /Volumes/MacBak001/cpaianm1/
+
+#http://www.linux.com/news/enterprise/storage/8200-back-up-like-an-expert-with-rsync
+#rsync -a ~/ /Volumes/MacBak001/cpaianm1/
+
+#http://everythinglinux.org/rsync/
+rsync --verbose  --progress --stats --compress --rsh=/usr/local/bin/ssh \
+--recursive --times --perms --links --delete \
+--exclude "*bak" \
+~/* /Volumes/MacBak001/cpaianm1/
