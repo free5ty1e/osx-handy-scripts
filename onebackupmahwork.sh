@@ -23,6 +23,7 @@ bakloc="/Users/cpaian/MEGA/Nike/"
 #cp ~/primestationoneMegaFiles/*.7z ~/MEGA/primestationoneMegaFiles/
 compress7z ~/snkrs-android-new
 compress7z ~/SingleDependencyCacherForNikeSslBullshit
+compress7z ~/common-attribution
 #compress7z ~/android-fuelprint-sdk
 #compress7z ~/vortex-android
 #compress7z ~/ios-assessmentkit
@@ -44,6 +45,7 @@ compress7z ~/one-nike-commerce-ios
 compress7z ~/snkrs-service-check
 mv ~/snkrs-android-new.7z "$bakloc"
 mv ~/SingleDependencyCacherForNikeSslBullshit.7z "$bakloc"
+mv ~/common-attribution.7z "$bakloc"
 #mv ~/android-fuelprint-sdk.7z ~/MEGA/Nike/
 #mv ~/vortex-android.7z ~/MEGA/Nike/
 #mv ~/ios-assessmentkit.7z ~/MEGA/Nike/
