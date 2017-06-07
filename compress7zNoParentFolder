@@ -4,4 +4,6 @@
 ### brew install p7zip
 
 #7z a -r -y -mx=9 "$1.7z" "$1"
-7z a -r -y -xr!.DS_Store -mx=9 "$1.7z" "./$1/*"
+#7z a -r -y -xr!.DS_Store -mx=9 "$1.7z" "./$1/*"
+###-r is implied as expected, adding an actual -r results in scanning outside specified folder!
+7z a -y -xr!.DS_Store -mx=9 "$1.7z" "./$1/*"
