@@ -31,7 +31,7 @@ do
    	echo "Fetching latest from git repo..."
 	cd "$home/$i" && git prune && git fetch && git prune && cd ..
 	echo "Compressing..."
-	compress7z ~/snkrs-android-new
+	compressAndroid7z ~/snkrs-android-new
 	echo "Storing backup in cloud folder..."
 	mv -f "$home/$i.7z" "$bakloc"
 	echo "Backup of $i completed!"
