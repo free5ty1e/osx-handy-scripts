@@ -14,6 +14,7 @@ declare -a arr=("gmiui_android"
                 "ims_android"
                 "ims_android-release"
                 "gvidtemplates"
+                "gmi_js_bridge"
                 )
 
 # declare -a arr=("snkrs-android-new" 
