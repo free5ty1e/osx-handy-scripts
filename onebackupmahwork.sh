@@ -3,17 +3,25 @@
 ###Start MEGA in background:
 startMEGA
 
-bakloc="/Users/cpaian/MEGA/Nike/"
+# bakloc="/Users/cpaian/MEGA/Nike/"
+bakloc="/Users/cpaiano/MEGAsync/ImageWare/"
 home=~
 
 
 ## declare an array variable
-declare -a arr=("snkrs-android-new" 
-                "SingleDependencyCacherForNikeSslBullshit" 
-                "common-attribution"
-                "one-nike-commerce-ios"
-                "snkrs-service-check"
+declare -a arr=("gmiui_android" 
+                "gvid_android" 
+                "ims_android"
+                "ims_android-release"
+                "gvidtemplates"
                 )
+
+# declare -a arr=("snkrs-android-new" 
+#                 "SingleDependencyCacherForNikeSslBullshit" 
+#                 "common-attribution"
+#                 "one-nike-commerce-ios"
+#                 "snkrs-service-check"
+#                 )
 
 ####iOS
 ##Do this part first just in case keychain issues, in which case this will always prompt for the damn password
