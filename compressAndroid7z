@@ -6,4 +6,4 @@
 #7z a -r -y -mx=9 "$1.7z" "$1"
 #7z a -r -y -xr!.DS_Store -mx=9 "$1.7z" "$1"
 ##-r is implied as expected, adding actual -r forces scanning outside specified folders!!
-7z a -y -xr!.DS_Store -xr!.gradle -xr!build -mx=9 "$1.7z" "$1"
+7z a -y -xr!.DS_Store -xr!.gradle -xr!.git -xr!build -mx=9 "$1.7z" "$1"
