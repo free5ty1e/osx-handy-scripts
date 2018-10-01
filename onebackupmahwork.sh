@@ -10,7 +10,7 @@ home=~
 
 ## declare an array variable
 declare -a arr=("gmiui_android" 
-                "gvid_android" 
+                "android_gvid" 
                 "ims_android"
                 "ims_android-release"
                 "gvidtemplates"
