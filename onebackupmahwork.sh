@@ -11,9 +11,9 @@ home=~
 ## declare an array variable
 declare -a arr=("gmiui_android" 
                 "android_gvid" 
-                "ims_android"
+                "android_gmi_sdk"
                 "ims_android-release"
-                "gvidtemplates"
+                "templates_gvid"
                 "gmi_js_bridge"
                 "gmi_oob_auth"
                 "ims_ios"
