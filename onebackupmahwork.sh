@@ -10,8 +10,14 @@ home=~
 
 ## declare an array variable
 declare -a arr=("gmiui_android" 
+                "android_gbank"
                 "android_gvid" 
+                "android_gvid_uif2"
+                "android_gvid_uif3"
                 "android_gmi_sdk"
+                "android_redrock_palmid_sdk"
+                "fujitsutemplates"
+                "GMIAdmin"
                 "ims_android-release"
                 "templates_gvid"
                 "gmi_js_bridge"
