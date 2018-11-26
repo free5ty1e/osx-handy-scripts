@@ -23,6 +23,7 @@ declare -a arr=("gmiui_android"
                 "gmi_js_bridge"
                 "gmi_oob_auth"
                 "ims_ios"
+                "ScreenshotCapturingSample"
                 )
 
 # declare -a arr=("snkrs-android-new" 
