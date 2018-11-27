@@ -24,6 +24,7 @@ declare -a arr=("gmiui_android"
                 "gmi_oob_auth"
                 "ims_ios"
                 "ScreenshotCapturingSample"
+                "JenkinsResources"
                 )
 
 # declare -a arr=("snkrs-android-new" 
