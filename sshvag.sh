@@ -2,6 +2,7 @@
 VagrantVmIp="$1"
 ssh-keygen -R "$VagrantVmIp"
 expect -c "spawn ssh -o StrictHostKeyChecking=no vagrant@$VagrantVmIp; expect assword:; send vagrant\r; interact"
+ssh-keygen -R "$VagrantVmIp"
 
 # VagrantVmIp="$1" && sshvagexp.sh
 # ssh "-o StrictHostKeyChecking=no vagrant@$VMIP"
