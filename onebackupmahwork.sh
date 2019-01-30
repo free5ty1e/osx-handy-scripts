@@ -26,6 +26,7 @@ declare -a arr=("gmiui_android"
                 "ScreenshotCapturingSample"
                 "JenkinsResources"
                 "gmi-stack"
+                "client-config"
                 )
 
 # declare -a arr=("snkrs-android-new" 
