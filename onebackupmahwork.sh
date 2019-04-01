@@ -27,6 +27,7 @@ declare -a arr=("gmiui_android"
                 "JenkinsResources"
                 "gmi-stack"
                 "client-config"
+                "Android-MFA"
                 )
 
 # declare -a arr=("snkrs-android-new" 
