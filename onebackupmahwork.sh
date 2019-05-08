@@ -28,6 +28,7 @@ declare -a arr=("gmiui_android"
                 "gmi-stack"
                 "client-config"
                 "Android-MFA"
+                "android_idrd_test"
                 )
 
 # declare -a arr=("snkrs-android-new" 
