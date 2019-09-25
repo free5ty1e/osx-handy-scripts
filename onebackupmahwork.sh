@@ -29,6 +29,7 @@ declare -a arr=("gmiui_android"
                 "client-config"
                 "Android-MFA"
                 "android_idrd_test"
+                "sok-media-downloader-dustinbcox"
                 )
 
 # declare -a arr=("snkrs-android-new" 
