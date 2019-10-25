@@ -30,6 +30,7 @@ declare -a arr=("gmiui_android"
                 "Android-MFA"
                 "android_idrd_test"
                 "sok-media-downloader-dustinbcox"
+                "gmiservertest"
                 )
 
 # declare -a arr=("snkrs-android-new" 
