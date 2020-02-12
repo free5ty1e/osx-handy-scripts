@@ -31,6 +31,7 @@ declare -a arr=("gmiui_android"
                 "android_idrd_test"
                 "sok-media-downloader-dustinbcox"
                 "gmiservertest"
+                "ims_android_qvtestv2"
                 )
 
 # declare -a arr=("snkrs-android-new" 
