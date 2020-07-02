@@ -9,15 +9,16 @@ home=~
 
 
 ## declare an array variable
-declare -a arr=("gmiui_android" 
-                "android_gbank"
-                "android_gvid" 
-                "android_gvid_uif3"
+declare -a arr=("android_gvid_uif3"
                 "jumpstart_sample_android"
                 "android_gmi_sdk"
                 "android_redrock_palmid_sdk"
                 "gmi-stack"
                 "client-config"
+                "gmi"
+                "gmiui_android" 
+                "android_gbank"
+                "android_gvid" 
                 "sok-media-downloader-dustinbcox"
                 "gmiservertest"
                 "ims_android_qvtestv2"
