@@ -56,6 +56,14 @@ Vagrant.configure("2") do |config|
   #   # Customize the amount of memory on the VM:
     vb.memory = "4096"
   end
+  
+
+  # The below lets us use VirtualBox for shared folders instead of rsync one-way syncing
+  config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+  #NOTE: You may have to execute the following vagrant command to enable the VirtualBox style shared folders:
+  # vagrant plugin install vagrant-vbguest
+  
+  
   #
   # View the documentation for the provider you are using for more
   # information on available options.
