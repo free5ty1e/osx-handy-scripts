@@ -10,6 +10,7 @@ home=~
 
 ## declare an array variable
 declare -a arr=("android_gvid_uif3"
+                "mobilepod-android"
                 "jumpstart_sample_android"
                 "android_gmi_sdk"
                 "android_redrock_palmid_sdk"
