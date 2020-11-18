@@ -34,9 +34,10 @@ declare -a arr=("android_gvid_uif3"
                 "fujitsutemplates"
                 "GMIAdmin"
                 "Android-MFA"
-                "gmiservertest"
-                "ims_android_qvtestv2"
                 )
+
+                # "gmiservertest"
+                # "ims_android_qvtestv2"
 
 # declare -a arr=("snkrs-android-new" 
 #                 "SingleDependencyCacherForNikeSslBullshit" 
