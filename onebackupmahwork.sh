@@ -12,6 +12,7 @@ home=~
 declare -a arr=("android_gvid_uif3"
                 "mobilepod-android"
                 "jumpstart_sample_android"
+                "jumpstart_sample_ios"
                 "android_gmi_sdk"
                 "android_redrock_palmid_sdk"
                 "gmi-stack"
