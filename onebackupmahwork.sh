@@ -59,13 +59,21 @@ for i in "${arr[@]}"
 do
 	# You can access them using echo "${arr[0]}", "${arr[1]}" also
    	echo "======----->>>Processing backup of $i..."
-   	echo "Fetching latest from git repo..."
-	cd "$home/$i" && git prune && git fetch && git prune && cd ..
-	echo "Compressing..."
-	compressAndroid7z "$home/$i"
-	echo "Storing backup in cloud folder..."
-	mv -f "$home/$i.7z" "$bakloc"
-	echo "Backup of $i completed!"
+
+    if [ -d "$home/$i" ] 
+    then
+        echo "Directory $home/$i exists." 
+        echo "Fetching latest from git repo..."
+        cd "$home/$i" && git prune && git fetch && git prune && cd ..
+        echo "Compressing..."
+        compressAndroid7z "$home/$i"
+        echo "Storing backup in cloud folder..."
+        mv -f "$home/$i.7z" "$bakloc"
+        echo "Backup of $i completed!"
+    else
+        echo "Error: Directory $home/$i does not exist, skipping..."
+    fi
+
 done
 
 ##Backup self and other scripts:
