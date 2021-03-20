@@ -64,8 +64,8 @@ do
     if [ -d "$home/$i" ] 
     then
         echo "Directory $home/$i exists." 
-        echo "Fetching latest from git repo..."
-        cd "$home/$i" && git prune && git fetch && git prune && cd ..
+        # echo "Fetching latest from git repo..."
+        # cd "$home/$i" && git prune && git fetch && git prune && cd ..
         echo "Compressing..."
         compressAndroid7z "$home/$i"
         echo "Storing backup in cloud folder..."
