@@ -5,7 +5,7 @@ startMEGA
 
 # bakloc="/Users/cpaian/MEGA/Nike/"
 bakloc="/Users/cpaiano/MEGAsync/ImageWare/"
-home="~/Documents/GitHub"
+home="/Users/cpaiano/Documents/GitHub"
 
 
 ## declare an array variable
