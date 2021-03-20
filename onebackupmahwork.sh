@@ -4,7 +4,7 @@
 startMEGA
 
 # bakloc="/Users/cpaian/MEGA/Nike/"
-bakloc="/Users/cpaiano/MEGAsync/ImageWare/"
+bakloc="/Users/cpaiano/MEGA/MEGAsync/ImageWare/"
 home="/Users/cpaiano/Documents/GitHub"
 
 
