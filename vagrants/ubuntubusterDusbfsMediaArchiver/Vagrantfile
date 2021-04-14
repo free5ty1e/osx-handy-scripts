@@ -70,9 +70,6 @@ Vagrant.configure("2") do |config|
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
 
-  config.vm.provision "shell", inline: "echo 'Mounting fileserver' && mount -t cifs -o rw,vers=3.0,dir_mode=0777,file_mode=0777,username=guest,password="" //192.168.100.104/sharedusb /media/sharedusb &&     mount -t cifs -o rw,vers=3.0,dir_mode=0777,file_mode=0777,username=guest,password="" //192.168.100.137/incoming /media/incoming",
-    run: "always"
-
   config.vm.provision "shell", inline: <<-SHELL
     echo "Updating apt..."
     apt-get update
@@ -98,12 +95,9 @@ Vagrant.configure("2") do |config|
     make
     sudo make install
     popd
-
-    echo "Mounting fileserver..."
-    mkdir -pv /media/sharedusb
-    mkdir -pv /media/incoming
-    mount -t cifs -o rw,vers=3.0,dir_mode=0777,file_mode=0777,username=guest,password="" //192.168.100.104/sharedusb /media/sharedusb
-    mount -t cifs -o rw,vers=3.0,dir_mode=0777,file_mode=0777,username=guest,password="" //192.168.100.137/incoming /media/incoming
   SHELL
+
+  config.vm.provision "shell", inline: "echo 'Mounting fileserver' && mkdir -pv /media/sharedusb && mkdir -pv /media/incoming && mount -t cifs -o rw,vers=3.0,dir_mode=0777,file_mode=0777,username=guest,password="" //192.168.100.104/sharedusb /media/sharedusb &&     mount -t cifs -o rw,vers=3.0,dir_mode=0777,file_mode=0777,username=guest,password="" //192.168.100.137/incoming /media/incoming",
+    run: "always"
 
 end
