@@ -79,7 +79,7 @@ Vagrant.configure("2") do |config|
     apt-get -y install git && pushd ~ && rm -rf debianusbfileserver && git clone https://github.com/free5ty1e/debianusbfileserver.git && debianusbfileserver/scripts/installfiles.sh && popd && finishinstall.sh
     
     echo "Installing required packages..."
-    apt-get -y install build-essential autoconf pkg-config nasm libtool cmake zlib1g-dev libpng-dev cifs-utils imagemagick ffmpeg
+    apt-get -y install build-essential autoconf pkg-config nasm libtool cmake zlib1g-dev libpng-dev cifs-utils imagemagick ffmpeg libavformat-dev libavcodec-dev libavutil-dev unzip
     
     echo "Compiling and installing mozjpeg utilities..."
     git clone https://github.com/mozilla/mozjpeg.git
@@ -95,6 +95,19 @@ Vagrant.configure("2") do |config|
     pushd jpeg-archive
     make
     sudo make install
+    popd
+
+    echo "Compiling and installing untrunc mp4 moov atom repair utility..."
+    git clone https://github.com/ponchio/untrunc.git
+    pushd untrunc
+    wget https://github.com/libav/libav/archive/v12.3.zip -O libav-12.3.zip
+    unzip libav-12.3.zip
+    pushd libav-12.3
+    ./configure
+    make
+    popd
+    g++ -o untrunc -I./libav-12.3 file.cpp main.cpp track.cpp atom.cpp codec_*.cpp codecstats.cpp codec.cpp mp4.cpp log.cpp -L./libav-12.3/libavformat -lavformat -L./libav-12.3/libavcodec -lavcodec -L./libav-12.3/libavresample -lavresample -L./libav-12.3/libavutil -lavutil -lpthread -lz
+    sudo cp untrunc /usr/local/bin/
     popd
   SHELL
 
