@@ -1,0 +1,6 @@
+
+Needs tech preview version of VMWare Fusion for ARM (as of 2023.08.29)
+https://gist.github.com/sbailliez/f22db6434ac84eccb6d3c8833c85ad92
+https://customerconnect.vmware.com/downloads/get-download?downloadGroup=FUS-PUBTP-2021H1
+https://gist.github.com/sbailliez/2305d831ebcf56094fd432a8717bed93
+
