@@ -11,4 +11,4 @@ convertFromCueToChd.sh - Compresses BIN disc format to CHD (V5). It will search 
 
 convertFromGdiToChd.sh - Compresses GDI disc format to CHD (v5). The GDI format is used by disc-based games for Dreamcast.
 
-convertFromIsoToChd.sh - Compresses ISO disc format to CHD (V5). The ISO format is used by disc-based games for PlayStation 2.
+convertFromIsoToChd.sh - Compresses ISO disc format to CHD (V5). The ISO format is used by disc-based games for PlayStation 2.  
